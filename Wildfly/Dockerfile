@@ -1,5 +1,5 @@
 FROM jboss/wildfly
 
-RUN /opt/wildfly/bin/add-user.sh --user admin --password qwerty1! --enable
+RUN /opt/wildfly/bin/add-user.sh --user admin --password qwerty1! --enable --silent
 
 CMD /opt/wildfly/bin/standalone.sh -b 0.0.0.0 -bmanagement 0.0.0.0
